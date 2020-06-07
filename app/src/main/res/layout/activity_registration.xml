@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.RegistrationActivity"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile"
+        android:layout_below="@+id/textFieldName"
+        android:layout_margin="16dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@+id/textFieldNumber"
+        android:layout_margin="16dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtview_regtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Type"
+        android:textSize = "20dp"
+        android:layout_margin="16dp"
+        android:layout_below="@id/textFieldEmail"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview_regtype"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldTickets"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. of Tickets"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#fff"
+        android:background="@drawable/round_button"
+        android:id="@+id/btn_reg_next"
+        android:layout_below="@id/textFieldTickets"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>

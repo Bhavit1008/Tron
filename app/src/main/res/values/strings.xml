@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tron</string>
+
+    <string-array name="Registration_type">
+        <item>Self</item>
+        <item>Group</item>
+        <item>Corporate</item>
+        <item>Others</item>
+    </string-array>
+</resources>
