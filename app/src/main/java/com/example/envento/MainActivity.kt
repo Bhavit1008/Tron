@@ -25,4 +25,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
     }
+
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+        moveTaskToBack(false)
+    }
+
+
 }

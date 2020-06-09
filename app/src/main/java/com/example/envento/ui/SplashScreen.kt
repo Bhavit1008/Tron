@@ -20,6 +20,7 @@ class SplashScreen : AppCompatActivity() {
             {
                 val i = Intent(this, MainActivity::class.java)
                 startActivity(i)
+                finish()
             }, SPLASH_TIME_OUT)
     }
 }

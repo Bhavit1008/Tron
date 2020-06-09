@@ -15,11 +15,12 @@
         <activity android:name=".ui.user.SuccessScreen" />
         <activity android:name=".ui.user.IdCardActivity" />
         <activity android:name=".ui.user.RegistrationActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"/>
         <activity android:name=".ui.AdminLogin" />
         <activity android:name=".ui.AdminRegistration" />
         <activity android:name=".scanQr.ScanQrAct" />
-        <activity android:name=".ui.SplashScreen">
+        <activity android:name=".ui.SplashScreen"
+            android:theme="@style/Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
