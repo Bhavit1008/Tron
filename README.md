@@ -1,4 +1,5 @@
 # Tron
+* Built for HACKEREARTH Stack Hack 1.0
 * It is a simple event managment app in which user can view the upcoming event list and admin can scan the pass(QR code) assigned to user on registration time.
 * In this app user can register for events and will recieve an mail with registrtion id QR code and a success screen.</br> 
 In this there are four registration types:-
